@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+	<tabs>
+		<sschollCore translate="label">
+			<label>SScholl Modules</label>
+			<sort_order>101</sort_order>
+		</sschollCore>
+	</tabs>
+	<sections>
+		<sscholloniximport translate="label" module="sscholloniximport">
+			<label>OnixImport</label>
+			<tab>sschollCore</tab>
+			<sort_order>3000</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<folder translate="label">
+					<label>Manage Folders</label>
+					<sort_order>100</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<import translate="label comment">
+							<label>Import Folder</label>
+							<comment>This folder contains the ONIX files to import. Enter the relative path without ending directory seperator.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>100</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</import>
+						<imported translate="label comment">
+							<label>Imported Folder</label>
+							<comment>This folder contains the imported ONIX files. Enter the relative path without ending directory seperator.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>200</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</imported>
+					</fields>
+				</folder>
+			</groups>
+		</sscholloniximport>
+	</sections>
+</config>

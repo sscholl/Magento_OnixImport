@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+	<modules>
+		<SScholl_OnixImport>
+			<version>0.0.7</version>
+		</SScholl_OnixImport>
+	</modules>
+	<global>
+		<helpers>
+			<sscholloniximport>
+				<class>SScholl_OnixImport_Helper</class>
+			</sscholloniximport>
+		</helpers>
+		<models>
+			<sscholloniximport>
+				<class>SScholl_OnixImport_Model</class>
+			</sscholloniximport>
+		</models>
+	</global>
+	<crontab>
+		<jobs>
+			<sscholloniximport_import_onix>
+				<schedule>
+					<cron_expr>* * * * *</cron_expr>
+				</schedule>
+				<run>
+					<model>sscholloniximport/cronjob_importOnix::run</model>
+				</run>
+			</sscholloniximport_import_onix>
+		</jobs>
+	</crontab>
+	<default>
+		<sscholloniximport>
+			<folder>
+				<import>media/sscholloniximport/import</import>
+				<imported>media/sscholloniximport/imported</imported>
+			</folder>
+		</sscholloniximport>
+	</default>
+</config>
